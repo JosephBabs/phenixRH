@@ -4,11 +4,11 @@
 @section('title') Ajouter Employés @endsection
 @section('content')
 
-<div class="panel-header py-5" data-background-color="dark">
+<div class="panel-header py-5" data-background-color="">
     <div class="page-inner ">
         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
             <div>
-                <h2 class="text-white pb-2 fw-bold">Formulaire d'ajout d'un employé</h2>
+                <h2 class="text-dark pb-2 fw-bold">Formulaire d'ajout d'un employé</h2>
             </div>
         </div>
     </div>

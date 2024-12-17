@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../assets/css/demo.css">
 </head>
 
-<body data-background-color="dark">
+<body data-background-color="light">
 
     <div class=" ">
         @include("layout.header")

@@ -1,6 +1,6 @@
 <div class="main-header">
     <!-- Logo Header -->
-    <div class="logo-header" data-background-color="dark2">
+    <div class="logo-header" data-background-color="light">
 
         <a href="../index.html" class="logo">
             <img src="../../assets/img/logo_keynetiks.png" width="150px" alt="navbar brand" class="navbar-brand">
@@ -21,7 +21,7 @@
     <!-- End Logo Header -->
 
     <!-- Navbar Header -->
-    <nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark2">
+    <nav class="navbar navbar-header navbar-expand-lg" data-background-color="light">
         <div class="container-fluid">
             <div class="collapse" id="search-nav">
 
@@ -32,7 +32,7 @@
                 <li class="nav-item dropdown hidden-caret">
                     <a class="dropdown-toggle row profile-pic d-flex justify-content-center align-items-center" data-toggle="dropdown" href="#" aria-expanded="false">
                         <div class="col-md">
-                            <h5 class="col-md" style="color: #fff; font-weight:900; font-size:15px;">{{ $userName }}</h5>
+                            <h5 class="col-md" style=" font-weight:900; font-size:15px;">{{ $userName }}</h5>
                         </div>
                         <div class="avatar-sm ">
                             <img src="../../assets/img/user.png" alt="..." width="60px" height="auto" class="avatar-img rounded-circle">
