@@ -50,7 +50,7 @@
             </div>
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-bordered">
+                    <table class="table table-hover table-striped" id="employeeTables">
                         <thead>
                             <tr>
                                 <th>Nom</th>
@@ -84,3 +84,38 @@
     </div>
 </div>
 @endsection
+
+
+@push('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        $("#employeeTables").DataTable({
+                    paging: true,
+                    searching: true,
+                    ordering: true,
+                    lengthChange: true,
+                    lengthMenu: [3, 5, 10, 25, 50, 100, 200],
+                    responsive: true,
+                    pageLength: 5,
+                    buttons: true,
+                    info: true,
+                    language: {
+                        search: "Rechercher:",
+                        lengthMenu: "Afficher _MENU_ employés par page",
+                        info: "Affichage de _START_ à _END_ sur _TOTAL_ employé(s)",
+                        infoEmpty: "Aucun enregistrement disponible",
+                        infoFiltered: "(filtré à partir de _MAX_ employé(s) au total)",
+                        paginate: {
+                            first: "Premier",
+                            last: "Dernier",
+                            next: "Suivant",
+                            previous: "Précédent"
+                        },
+                        emptyTable: "Aucune donnée disponible dans le tableau",
+                        searchPlaceholder: 'Rechercher dans le tableau...', // Custom placeholder text
+                        search: 'Rechercher:'
+                    }
+                });
+    });
+</script>
+@endpush

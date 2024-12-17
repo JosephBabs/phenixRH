@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="panel-header " data-background-color="dark2">
-    <div class="page-inner py-5">
+    <div class="page-inner ">
         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
             <div>
                 <h2 class="text-white pb-2 fw-bold">Formulaire d'ajout d'un employé</h2>
