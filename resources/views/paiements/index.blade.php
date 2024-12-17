@@ -20,7 +20,7 @@
             </div>
             <div class="card-body">
 
-                <table class="table">
+                <table class="table" id="paimentHistTable">
                     <thead>
                         <tr>
                             <th>Numéro de Référence</th>
@@ -56,3 +56,39 @@
     </div>
 </div>
 @endsection
+
+
+
+@push('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        $("#paimentHistTable").DataTable({
+                    paging: true,
+                    searching: true,
+                    ordering: true,
+                    lengthChange: true,
+                    lengthMenu: [3, 5, 10, 25, 50, 100, 200],
+                    responsive: true,
+                    pageLength: 5,
+                    buttons: true,
+                    info: true,
+                    language: {
+                        search: "Rechercher:",
+                        lengthMenu: "Afficher _MENU_ paiements par page",
+                        info: "Affichage de _START_ à _END_ sur _TOTAL_ paiement(s)",
+                        infoEmpty: "Aucun enregistrement disponible",
+                        infoFiltered: "(filtré à partir de _MAX_ paiement(s) au total)",
+                        paginate: {
+                            first: "Premier",
+                            last: "Dernier",
+                            next: "Suivant",
+                            previous: "Précédent"
+                        },
+                        emptyTable: "Aucune donnée disponible dans le tableau",
+                        searchPlaceholder: 'Rechercher dans le tableau...', // Custom placeholder text
+                        search: 'Rechercher:'
+                    }
+                });
+    });
+</script>
+@endpush
