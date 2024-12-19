@@ -38,9 +38,9 @@
                                         </div>
                                     </div>
 
-                                    {{-- <div class="col-sm-6">
-                                            <a href="#" class="float-end text-primary">Forgot Password?</a>
-                                        </div>  --}}
+                                     <div class="col-sm-6">
+                                            <a href="#" class="float-end text-primary">Mot de passe ?</a>
+                                        </div>
 
                                     <div class="col-12">
                                         <button type="submit" class="btn btn-primary px-4 float-end mt-4">Connexion</button>
